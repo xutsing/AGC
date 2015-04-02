@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!--fonts-->
+		<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+				var h=$(window).height();
+				var margin_top=h*0.15818;
+				$(".banner-info").css("margin-top",margin_top);
+				
+			});
+		</script>
+        <script src="js/sound.js"></script>
+	<!-- start-smoth-scrolling -->
+
+</head>
+<body>
+<!-- banner -->
+<div id="home" class="banner">
+	<div class="container">
+		<div class="banner-info">
+			<h1>Welcome to <a href="site/index.html"> AGC Advisory</a></h1>
+			<p>Looking for the services you need</p>
+			<div class="view col-lg-4 col-md-6 col-sm-6"><a href="site/index-2.html">Accounting Service</a></div>
+            <div class="view col-lg-4 col-md-6 col-sm-6"><a href="site/index-2.html">Taxation Service</a></div>
+            <div class="view col-lg-4 col-md-6 col-sm-6"><a href="site/index-2.html">Corporate Advisory</a></div>
+            <div class="view col-lg-4 col-md-6 col-sm-6"><a href="site/index-2.html">SMSF</a></div>
+            <div class="view col-lg-4 col-md-6 col-sm-6"><a href="site/index-2.html">Registration</a></div>
+            <div class="view col-lg-4 col-md-6 col-sm-6"><a href="site/index-2.html">More</a></div>
+		</div>
+		<div class="banner-grids">
+			<div class="col-md-4 banner-grid text-center">
+				<div class="banner-left">
+					<ul>
+						<li><label> </label></li>
+						<li>Have a question? Call us now<span><a href="tel:8541 9730">(02) 8541 9730</a></span> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 banner-grid text-center">
+				<div class="banner-middle">
+					<ul>
+						<li><label> </label></li>
+						<li>We are open Mon-Fri<span>Mon - Fri 08:00 - 17:00</span> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 banner-grid text-center">
+				<div class="banner-right">
+					<ul>
+						<li><label> </label></li>
+						<li>Need support? Drop us an email<span><a href="mail-to:sample@example.com">Support@yoursite.com</a></span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+</body>
+</html>

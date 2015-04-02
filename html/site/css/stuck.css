@@ -1,0 +1,55 @@
+#stuck_container {
+	
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+        width:100%;
+}
+
+.isStuck {
+	
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+        background: #ffffff !important;
+        text-align:center;
+}
+.isStuck .menuBox {
+	margin: 0;
+    padding:0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+@media (min-width: 991px) {
+.isStuck {
+    border-bottom:16px solid #a8dcf7;
+}
+ 
+}
+@media (max-width: 991px) {
+
+    .isStuck {
+        background: transparent !important;
+    }
+	#stuck_container {
+		position: relative !important;
+		box-shadow: none;
+	}
+	.pseudoStickyBlock {
+		height: 0 !important;
+	}
+}
+@media (min-width: 974px) and (max-width: 1200px) {
+.lan{ position:absolute; top:5px; right:25px; z-index:10000;}
+.con_lan{ position:static;}
+}
